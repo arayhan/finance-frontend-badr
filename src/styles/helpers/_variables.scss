@@ -1,0 +1,33 @@
+$font-primary: "Lato", sans-serif;
+
+$font-size-text-xsmall: 0.8em;
+$font-size-text-small: 0.9em;
+$font-size-text-normal: 1em;
+$font-size-text-large: 1.2em;
+$font-size-text-xlarge: 1.3em;
+
+$font-size-title-normal: 1.2em;
+
+$color-primary: #1e84ef;
+$color-primary-lighten-1: lighten($color-primary, 5%);
+$color-primary-lighten-2: lighten($color-primary, 10%);
+$color-primary-darken-1: darken($color-primary, 5%);
+$color-primary-darken-2: darken($color-primary, 10%);
+
+$color-green: #18a657;
+$color-red: #f94a6b;
+$color-grey: #adb6cf;
+$color-text-primary: #353e4a;
+$color-text-grey-lighten: #adb6cf;
+$color-text-grey-darken: #8691a1;
+$color-background: #e6eef4;
+
+$radius-primary: 3px;
+
+$breakpoint-xxl: 1400px;
+$breakpoint-xl: 1024px;
+$breakpoint-lg: 920px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 576px;
+$breakpoint-xs: 480px;
+$breakpoint-xxs: 320px;

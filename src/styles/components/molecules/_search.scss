@@ -1,0 +1,19 @@
+.search {
+	border: 1px solid $color-background;
+	padding: 15px;
+	display: flex;
+	width: 300px;
+	border-radius: $radius-primary;
+	
+	input {
+		border: 0;
+		flex: 1;
+		font-size: 1em;
+		outline: none;
+		margin-right: 15px;
+	}
+	
+	.icon {
+		color: $color-grey;
+	}
+}

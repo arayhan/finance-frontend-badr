@@ -1,0 +1,53 @@
+.datatable {
+	.datatable-body {
+		overflow-x: auto;
+
+		table {
+			width: 100%;
+			min-width: $breakpoint-md;
+	
+			tr {
+				border: 1px solid $color-background;
+				
+				td, th {
+					padding: 20px;
+					text-align: left;
+					font-size: 1em;
+					color: $color-text-primary;
+
+					span {
+						font-size: 0.9em;
+					}
+				}
+			}
+	
+			thead {
+				tr {
+					th {
+						color: $color-text-grey-darken;
+					}
+				}
+			}
+	
+			tbody {
+				tr {
+					&:nth-child(odd) {
+						background: lighten($color-background, 5%);
+					}
+				}
+			}
+
+			&.table-clickable tbody tr {
+				cursor: pointer;
+			}
+
+			&.table-hoverable tbody tr:hover {
+				background: lighten($color-background, 3%);
+			}
+		}
+	}
+
+	.datatable-footer {
+		padding: 20px;
+	}
+}

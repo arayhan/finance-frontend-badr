@@ -1,0 +1,71 @@
+.icon {
+	font-size: 1.8em;
+	position: relative;
+
+	.badge {
+		position: absolute;
+		width: 8px;
+		height: 8px;
+		background: $color-red;
+		border-radius: 100%;
+		bottom: 5px;
+		right: -3px;
+	}
+	
+	&.xsmall {
+		font-size: 1.1em;
+	}
+	&.small {
+		font-size: 1.2em;
+	}
+	&.large {
+		font-size: 2em;
+
+		.badge {
+			bottom: 8px;
+		}
+	}
+}
+
+.loading-icon {
+	display: inline-block;
+	position: relative;
+	width: 40px;
+	height: 40px;
+}
+
+.loading-icon div {
+	display: inline-block;
+	position: absolute;
+	left: 4px;
+	width: 8px;
+	background: #1e84ef;
+	animation: loading-icon 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.loading-icon div:nth-child(1) {
+	left: 4px;
+	animation-delay: -0.24s;
+}
+
+.loading-icon div:nth-child(2) {
+	left: 16px;
+	animation-delay: -0.12s;
+}
+  
+.loading-icon div:nth-child(3) {
+	left: 28px;
+	animation-delay: 0;
+}
+
+@keyframes loading-icon {
+	0% {
+	  	top: 4px;
+	  	height: 32px;
+	}
+	50%, 100% {
+	  	top: 12px;
+	  	height: 16px;
+	}
+}
+  

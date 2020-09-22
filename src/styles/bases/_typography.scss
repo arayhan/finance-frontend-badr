@@ -1,0 +1,47 @@
+* {
+	font-family: $font-primary;
+}
+
+.text-link {
+	color: $color-primary;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
+.text-italic {
+	font-style: italic;
+}
+
+.text-underline {
+	text-decoration: underline;
+}
+
+.no-underline {
+	text-decoration: none;
+}
+
+.text-title-size-normal {
+	font-size: $font-size-title-normal;
+}
+
+.text-color-primary {
+	color: $color-text-primary;
+}

@@ -1,0 +1,83 @@
+#authPage {
+	.header {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding: 30px;
+		font-size: 1.2em;
+
+		.left {
+			.logo {
+				color: white;
+				text-decoration: none;
+
+				.icon {
+					margin-right: 10px;
+				}
+
+				.text {
+					font-weight: bold;
+				}
+			}
+		}
+
+		.right {
+			a {
+				color: $color-primary;
+				text-decoration: none;
+				font-weight: bold;
+
+				@include media-screen(md) {
+					color: white;
+				}
+			}
+		}
+	}
+	.body {
+		min-height: 100vh;
+
+		.left {
+			background: $color-primary;
+			width: 40vw;
+			padding-top: 150px;
+			padding-left: 60px;
+			padding-right: 60px;
+
+			@include media-screen(md) {
+				padding: 100px 30px 40px;
+				width: 100%;
+			}
+
+			p {
+				color: white;
+				font-size: 1.5em;
+				line-height: 1.4em;
+				letter-spacing: 2px;
+
+				&:first-child {
+					font-weight: bold;
+					font-size: 1.5em;
+					margin-bottom: 20px;
+				}
+			}
+		}
+
+		.right {
+			padding: 60px 100px;
+
+			.title {
+				color: $color-text-primary;
+				font-size: 2em;
+				margin-bottom: 20px;
+				font-weight: bold;
+			}
+
+			.subtitle {
+				color: $color-text-primary;
+				font-size: 1em;
+				margin-bottom: 40px;
+			}
+		}
+	}
+}

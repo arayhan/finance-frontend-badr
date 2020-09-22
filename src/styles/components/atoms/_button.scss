@@ -1,0 +1,76 @@
+.btn {
+	padding: 15px 50px;
+	background: $color-grey;
+	border: 0;
+	border-radius: $radius-primary;
+	color: white;
+	cursor: pointer;
+	transition: all 200ms ease;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	outline: none;
+
+	&:hover {
+		background: darken($color-grey, 5%);
+	}
+
+	&.btn-primary {
+		background: $color-primary;
+
+		&:hover {
+			background: darken($color-primary, 5%);
+		}
+	}
+
+	&.btn-transparent {
+		background: transparent;
+		color: $color-grey;
+
+		&:hover {
+			background: transparentize(darken(white, 5%), 0.5);
+		}
+	}
+
+	&.btn-white {
+		background: white;
+		color: $color-text-primary;
+
+		&:hover {
+			background: darken(white, 5%);
+		}
+	}
+
+	&.btn-green {
+		background: $color-green;
+
+		&:hover {
+			background: darken($color-green, 5%);
+		}
+	}
+
+	&.btn-red {
+		background: $color-red;
+
+		&:hover {
+			background: darken($color-red, 5%);
+		}
+	}
+
+	&.btn-text {
+		background: none;
+		padding: 10px;
+		color: $color-grey;
+	}
+
+	&.btn-icon {
+		padding: 0;
+		width: 35px;
+		height: 35px;
+	}
+
+	&.btn-outline {
+		border: 1px solid $color-grey;
+	}
+}

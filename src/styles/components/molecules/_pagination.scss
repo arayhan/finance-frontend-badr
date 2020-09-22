@@ -1,0 +1,46 @@
+.pagination {
+	display: flex;
+
+	li {
+		border: 1px solid $color-text-primary;
+		border-right: 0;
+		overflow: hidden;
+		
+		a {
+			padding: 10px 15px;
+			display: inline-block;
+			outline: none;
+			cursor: pointer;
+			font-size: 0.9em;
+
+		}
+
+		&:hover {
+			background: #eee;
+		}
+
+		&.disabled {
+			a {
+				color: #aaa;
+			}
+
+			&:hover {
+				background: none;
+			}
+		}
+
+		&.active a {
+			background: #ccc;
+		}
+		
+		&:first-child {
+			border-top-left-radius: $radius-primary;
+			border-bottom-left-radius: $radius-primary;
+		}
+		&:last-child {
+			border-top-right-radius: $radius-primary;
+			border-bottom-right-radius: $radius-primary;
+			border: 1px solid $color-text-primary;
+		}
+	}
+}

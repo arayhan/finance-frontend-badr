@@ -1,0 +1,21 @@
+@mixin media-screen($media-size: 0) {
+	@if $media-size == "xxl" {
+		$media-size: $breakpoint-xxl;
+	} @else if $media-size == "xl" {
+		$media-size: $breakpoint-xl;
+	} @else if $media-size == "lg" {
+		$media-size: $breakpoint-lg;
+	} @else if $media-size == "md" {
+		$media-size: $breakpoint-md;
+	} @else if $media-size == "sm" {
+		$media-size: $breakpoint-sm;
+	} @else if $media-size == "xs" {
+		$media-size: $breakpoint-xs;
+	} @else if $media-size == "xxs" {
+		$media-size: $breakpoint-xxs;
+	}
+
+	@media screen and (max-width: $media-size) {
+		@content;
+	}
+}
